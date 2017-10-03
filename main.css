@@ -6,15 +6,17 @@
 
 body{
   background-color:  #e6e6e6;
-  font-family: 'Bowlby One', cursive;
+  font-family:Cooper-Black;
   text-align: center;
+  margin: 0 auto;
 }
 
 p{
   text-align: center;
   margin: 0 auto;
-  font-size: 11.75em;
+  font-size: 13.75em;
   color:grey;
+  line-height: 1.35;
 }
 
 .shake{
@@ -50,7 +52,17 @@ p{
     transform: translate3d(4px, 0, 0);
   }
 }
-#gallery{
+.gallery{
   clear: both;
   display: inline-block;
+  width:100%;
+  padding-top: 2%;
+  margin: 0 auto;
+}
+
+.gallery a{
+  display: block;
+  height:100vh;
+  background-color: blue;
+  width:100%;
 }
