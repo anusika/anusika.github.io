@@ -1,3 +1,64 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link rel="stylesheet" href="main.css" rel="stylesheet">
+<title> An Imperial Affliction </title>
+</head>
+<body>
+<div class="front">
+<p class="header">An Imperial Affliction.</p>
+<div class="shake ">See Reviews!</div>
+</div>
+<div id="slideshow">
+   <div>
+     <p>Is it even a real book?</p>
+     <p>-Everyone</p>
+   </div>
+   <div>
+     <p>Yeah, I know that one girl in The Fault In Our Stars talks about it
+     but is it real?</p>
+     <p>-Everyone</p>
+   </div>
+   <div>
+     <p>Obviously it's real! </p>
+     <p> -Everyone's Friend </p>
+   </div>
+   <div>
+     <p> I've run out of fake quotes </p>
+     <p> -Anusika </p>
+   </div>
+</div>
+<script>
+$(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+});
+</script>
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000)
+</script>
+<script>
+$(".shake").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#slideshow").offset().top
+    },2000);
+});
+</script>
+</body>
+</html>
+=======
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,3 +78,4 @@
 </div>
 </body>
 </html>
+>>>>>>> 9e6f3debc9f94ba7445da94fef68e02af8516a6d
