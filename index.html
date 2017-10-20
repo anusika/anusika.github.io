@@ -3,57 +3,28 @@
 <head>
   <meta name="viewport" content="width=device-width">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" href="main.css" rel="stylesheet">
-<title> An Imperial Affliction </title>
+<title> Homepage </title>
 </head>
-<body>
-<div class="front">
-<p class="header">An Imperial Affliction.</p>
-<div class="shake ">See Reviews!</div>
+<body id="home">
+<marquee class="header">Anusika's Website!  </marquee>
+<nav>
+  <a href="index.html" class="here">Home</a>
+  <a href="flags.html">Flags</a>
+  <a href="web.html"> Web Design </a>
+  <a href="experience.html" > Volunteer Experience </a>
+</nav>
+<div class="wrapper">
+<img class="me"src="img/me.jpg"/>
+<div class="paragraphs">
+<p> Here's a picture of my face Photoshopped onto evil baby Voldemort </p>
+<p> I am currently a senior at Holy Cross Regional High School</p>
+<p>Am hoping for any university to accept me. </p>
+<p> You can find me near a computer or a Magic: the Gathering game. </p>
+<p> If you need to contact me my email is <br>anusikanijher@gmail.com </p>
+<p> My twitter is <a href="https://twitter.com/Anusikan"> @anusikan</a></p>
 </div>
-<div id="slideshow">
-   <div>
-     <p>Is it even a real book?</p>
-     <p>-Everyone</p>
-   </div>
-   <div>
-     <p>Yeah, I know that one girl in The Fault In Our Stars talks about it
-     but is it real?</p>
-     <p>-Everyone</p>
-   </div>
-   <div>
-     <p>Obviously it's real! </p>
-     <p> -Everyone's Friend </p>
-   </div>
-   <div>
-     <p> I've run out of fake quotes </p>
-     <p> -Anusika </p>
-   </div>
 </div>
-<script>
-$(window).on('beforeunload', function(){
-  $(window).scrollTop(0);
-});
-</script>
-<script>
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() {
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-}, 3000)
-</script>
-<script>
-$(".shake").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#slideshow").offset().top
-    },2000);
-});
-</script>
 </body>
 </html>
