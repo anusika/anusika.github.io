@@ -1,153 +1,155 @@
-
-@font-face {
-    font-family: Cooper-Black;
-    src: url('cooper-black.ttf');
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+.special{
+  background-image: url("background.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Special Elite', cursive;
 
-body{
-  margin: 0 auto;
-  text-align: center;
 }
-p > a{
+
+#contact h1{
+    font-family: 'Special Elite', cursive;
+}
+
+#contact p{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+}
+.special p{
+  font-size:100px;
+}
+
+.special a{
+  color: black;
   text-decoration: none;
-  color:#8080ff;
-  font-weight: bold;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.row,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-P > a:hover{
-  font-weight: bold;
-}
-p{
-  font-size: 1.5em;
-  font-family: 'Oswald', sans-serif;
-  margin:0;
-  padding:1%;
-}
-img{
-  display:inline-block;
-  width:300px;
-}
-.header{
-  font-family: Cooper-Black, sans-serif;
-  font-size:50px;
-  padding:0;
-  display: inline-block;
-  margin-top:1%;
-  margin-bottom:1%;
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background-color: white;
 }
 
-nav{
-  display: flex;
-  justify-content: space-between;
-  width:60%;
-  margin:auto;
-  padding-top:1%;
-  padding-bottom:1%;
-  align-self: auto;
-  background-color: #8080ff;
-  padding-right: 5%;
-  padding-left: 5%;
-  border-radius:10px;
-  margin-bottom:2%;
+.header a{
+   color:black;
 }
-nav a{
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
-  font-size: 1.7em;
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  line-height: 40px;
   color:black;
-  font-weight: bold;
-  text-decoration: none;
-  padding:2px;
+  margin-right:5px;
 }
 
-nav a:hover{
-  opacity:0.5;
-  color:blue;
-  border-bottom: 3px blue solid;
-}
-.here{
-  border-bottom: 3px solid black;
-  opacity: 0.9;
-}
-
-.image-container{
-  position: relative;
-display:inline-block;
-padding: 10px;
-}
-.image-container > p{
-  display:none;
-}
-
-.image-container:hover >p{
-display:inline-block;
-z-index: 1;
-position: absolute;
-top:10px;
-right:30px;
-font-size: 2em;
-font-weight: bold;
-}
-
-.image-container:hover > img{
-  opacity:0.8;
-}
-#website > p{
-  padding:2px;
-}
-
-#website >p:first-of-type{
-  padding-top:5%;
-}
-
-
-.website{
-
-  display: inline-block;
-  padding:5%;
-  width:300px;
-}
-.website > p{
-  display: none;
-}
-
-.website:hover> p{
-  display: block;
-}
-
-.wrapper{
-  width:60%;
-  margin: auto;
-  text-align: right;
-}
-
-.me{
-  float:left;
-}
-
-.parapgraphs{
-  width: 45%;
-  float:right;
-  text-align: right;
-}
-
-.parapgraphs>p{
-    text-align: right;
-}
-
-iframe{
-  height:70vh;
-  width: 70%;
-}
-
-@media only screen and (max-width: 500px) {
-  .wrapper, .me, .paragraphs{
-    width:90%;
-    margin: 0 auto;
-}
-.paragraphs >p{
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
   text-align: center;
-  padding-top: 2%;
 }
+
+
+.roles{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 45px;
+}
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Supporting marketing content */
+.row {
+  margin: 40px 0;
+}
+.row p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .row,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+.special p{
+  font-size: 100px;
+}
+
+.special{
+  height:300px;
+}
+
+.roles{
+  font-size: 25px;
+}
+}
+
+/* for phones */
+@media screen and (max-width: 425px) {
+  #contact p{
+      font-size: 6vw;
+  }
+
+  .roles{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+  }
+  .special p{
+    font-size:50px;
+}
+  .special > .row{
+    padding:0;
+  }
+  .special{
+    height:200px;
+  }
 }
