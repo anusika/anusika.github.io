@@ -2,6 +2,10 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+  height:100%;
+  font-family: 'Noto Sans', sans-serif;
+  overflow-y: scroll;
 }
 
 .special{
@@ -13,6 +17,98 @@ body {
   background-size: cover;
   font-family: 'Special Elite', cursive;
 
+}
+
+.box{
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.parallax{
+  background-image: url("school.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.parallax2{
+  background-image: url("coding.png");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+hr{
+  background-color: #eee;
+  border: 0 none;
+  color: #eee;
+  height: 10px;
+}
+
+.nwhacks img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nwhackspara {
+  font-size: 20px;
+}
+.parallax3{
+  background-image: url("volunteer.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.nav li.active a{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+
+h2{
+  font-weight: bold;
+  color:purple;
+}
+
+.no-bulletpt{
+   list-style-type: none;
+}
+
+li{
+  padding-top:5px;
+  line-height: 25px;
+  font-size: 15px;
 }
 
 #contact h1{
@@ -49,7 +145,7 @@ body {
 }
 
 .header a{
-   color:black;
+   text-decoration: none;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -58,6 +154,7 @@ body {
   line-height: 40px;
   color:black;
   margin-right:5px;
+  text-decoration:none;
 }
 
 /* Custom page footer */
@@ -73,6 +170,10 @@ body {
   text-align: center;
   font-family: 'Permanent Marker', cursive;
   font-size: 45px;
+}
+
+.roles a:hover{
+  color:purple;
 }
 /* Customize container */
 @media (min-width: 768px) {
@@ -151,5 +252,8 @@ body {
   }
   .special{
     height:200px;
+  }
+  .nwhacks img{
+    width:90%;
   }
 }
