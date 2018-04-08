@@ -67,6 +67,10 @@ hr{
   height: 10px;
 }
 
+mark {
+    background-color: yellow;
+    color: black;
+}
 .nwhacks img{
   display: block;
   margin-left: auto;
